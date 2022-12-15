@@ -1,0 +1,30 @@
+@use '../../../styles/colors';
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-self: stretch;
+  padding-left: 1rem;
+}
+
+.list,
+.listItem {
+  display: contents;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: colors.$secondaryText;
+  text-decoration: none;
+  transition-duration: 0.15s;
+
+  &.active {
+    border-bottom: 2px solid currentColor;
+  }
+
+  &.active,
+  &:hover {
+    color: colors.$primaryText;
+  }
+}

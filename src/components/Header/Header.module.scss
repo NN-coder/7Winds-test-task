@@ -1,0 +1,11 @@
+@use '../../styles/colors';
+
+.header {
+  display: flex;
+  align-items: center;
+  grid-column: 1 / -1;
+  gap: 1rem;
+  padding: 0 1rem;
+  border-bottom: 1px solid colors.$borderColor;
+  color: colors.$primaryText;
+}
